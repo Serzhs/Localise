@@ -17,7 +17,7 @@ export type Props = {
 
 export const LanguageCard: FC<Props> = ({ id, countryName, countryCode, unverified, progressPercentage, words }) => {
   return (
-    <div>
+    <div data-test-id="language-card">
       <div className={styles.header}>
         <Flag code={countryCode} height="10" />
         <div className={styles.headingWrapper}>

@@ -70,7 +70,7 @@ export const Dashboard: FC = () => {
             </div>
           </div>
           <div className="row">
-            <div className={`col-md-3 ${styles.sideBorder}`}>
+            <div className={`col-md-3 col-sm-6 col-xs-12 margin-bottom--5 ${styles.sideBorder}`}>
               <div className={styles.sideBard}>
                 <div className="row margin-bottom--2">
                   <div className="col-xs-12">
@@ -128,12 +128,12 @@ export const Dashboard: FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-9">
+            <div className="col-md-9 col-sm-6 col-xs-12">
               <div className={styles.content}>
                 <div className="row">
                   {languages.map(({ id, countryName, countryCode, unverified, progressPercentage, words }) => {
                     return (
-                      <div key={id} className="col-md-3 margin-bottom--4">
+                      <div key={id} className="col-md-3 col-sm-6 col-xs-12 margin-bottom--4">
                         <LanguageCard
                           id={id}
                           countryCode={countryCode}
@@ -145,7 +145,7 @@ export const Dashboard: FC = () => {
                       </div>
                     );
                   })}
-                  <div className="col-md-3">
+                  <div className="col-md-3 col-sm-6 col-xs-12" data-test-id="open-language-modal-button">
                     <Button label="Add language" type="blank" onClick={() => openModal()} />
                   </div>
                 </div>

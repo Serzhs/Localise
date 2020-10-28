@@ -13,7 +13,7 @@ it('LanguageSelectModal matches snapshot', () => {
         onLanguageChange={() => {
           console.log('onLanguageChange');
         }}
-      />
+      />,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

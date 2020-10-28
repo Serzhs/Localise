@@ -43,7 +43,7 @@ export const LanguageSelectModal: FC<Props> = ({ onLanguageChange, onClose }) =>
           <div className={styles.buttonWrapper}>
             <Button label="Close" type="blank" onClick={() => onClose()} />
           </div>
-          <div className={styles.buttonWrapper}>
+          <div className={styles.buttonWrapper} data-test-id="submit-language-modal-button">
             <Button label="Add" onClick={() => onLanguageChange(selectedValues.current as Language[])} />
           </div>
         </div>
