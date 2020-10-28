@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: $--c--border;
+}
+
+.progress {
+  height: 4px;
+  border-radius: 4px;
+}
+
+.low {
+  background-color: $--c--progress-low;
+}
+
+.medium {
+  background-color: $--c--progress-medium;
+}
+
+.high {
+  background-color: $--c--progress-high;
+}

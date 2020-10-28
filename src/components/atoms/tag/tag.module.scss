@@ -1,0 +1,16 @@
+@import '../../../styles/variables';
+
+.tag {
+  padding: 4px 10px;
+  font-size: 12px;
+  color: $--c--light;
+  border-radius: 22px;
+}
+
+.green {
+  background-color: $--c--tag-2;
+}
+
+.grey {
+  background-color: $--c--tag-1;
+}

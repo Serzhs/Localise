@@ -1,0 +1,19 @@
+@import './variables';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: $--c--main;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  color: $--c--secondary;
+}

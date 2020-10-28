@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.wrapper {
+  width: 100%;
+  display: inline-block;
+}
+
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.value {
+  color: $--c---main-shade;
+  font-size: 17px;
+  display: block;
+}
+
+.valueLarge {
+  font-size: 19px;
+}
+
+.valueHighlighted {
+  color: $--c--secondary;
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.dashboard {
+  padding: 26px 0;
+}
+
+.sideBard {
+  padding-right: 1rem;
+}
+
+.content {
+  padding-left: 1rem;
+}
+
+.sideBorder {
+  border-right: 1px solid $--c--border;
+}
+
+.buttonWrapper {
+  margin-right: 5px;
+}
+
+.iconsWrapper {
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.iconWrapper {
+  padding: 0 2px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.tagWrapper {
+  margin-right: 2px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

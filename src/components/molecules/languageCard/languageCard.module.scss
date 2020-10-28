@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.headingWrapper {
+  margin-left: 5px;
+}
+
+.label {
+  font-size: 10px;
+}
+
+.infoWrapper {
+  padding-right: 5px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
