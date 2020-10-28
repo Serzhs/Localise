@@ -35,8 +35,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
     "isready": "npm run format && npm run lint && npm run build",
-    "cypress": "cypress open",
-    "test:e2e": "start-server-and-test :3000 cy:run"
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
