@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 
 export default function useLocalStorage<T>(key: string, initialValue: T) {
-
   // Get from local storage then
   // parse stored json or return initialValue
   const readValue = () => {
-
     // Prevent build error "window is undefined" but keep keep working
     if (typeof window === 'undefined') {
       return initialValue;
@@ -24,12 +22,9 @@ export default function useLocalStorage<T>(key: string, initialValue: T) {
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
   const setValue = (value: T) => {
-
     // Prevent build error "window is undefined" but keep keep working
     if (typeof window === 'undefined') {
-      console.warn(
-        `Tried setting localStorage key “${key}” even though environment is not a client`,
-      );
+      console.warn(`Tried setting localStorage key “${key}” even though environment is not a client`);
     }
     try {
       // Allow value to be a function so we have the same API as useState
